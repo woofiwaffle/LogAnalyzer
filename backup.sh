@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# chmod +x backup.sh
+
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 LOG_DIRECTORY BACKUP_DIRECTORY"
     exit 1
