@@ -1,0 +1,5 @@
+2024-10-01 10:00:00 INFO Application started
+2024-10-01 10:01:00 WARN Low disk space
+2024-10-01 10:02:00 ERROR Failed to load resource
+2024-10-01 10:03:00 INFO Application running
+2024-10-01 10:05:00 ERROR Unable to connect to server

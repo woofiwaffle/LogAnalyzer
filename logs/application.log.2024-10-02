@@ -1,0 +1,11 @@
+2024-10-02 09:00:00 INFO Application started
+2024-10-02 09:01:00 WARN CPU usage exceeded threshold
+2024-10-02 09:02:00 ERROR Failed to save configuration
+2024-10-02 09:03:00 INFO Configuration loaded
+2024-10-02 09:05:00 ERROR Unable to reach external API
+2024-10-02 09:06:00 INFO User created a new report
+2024-10-02 09:07:00 WARN Report generation took too long
+2024-10-02 09:10:00 INFO User logged in
+2024-10-02 09:12:00 ERROR Email notification failed
+2024-10-02 09:15:00 INFO Report generated successfully
+2024-10-02 09:20:00 INFO Application shutting down

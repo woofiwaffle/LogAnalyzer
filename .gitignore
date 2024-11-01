@@ -1,0 +1,8 @@
+backup_logs/
+
+*.log
+*.tmp
+*.bak
+__pycache__/
+*.pyc
+.venv
