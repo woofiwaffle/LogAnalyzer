@@ -3,8 +3,8 @@ import csv
 import subprocess
 from datetime import datetime
 
-LOG_DIRECTORY = 'logs'
-BACKUP_DIRECTORY = '../backup_logs/'
+LOG_DIRECTORY = 'logs/'
+BACKUP_DIRECTORY = 'backup_logs/'
 OUTPUT_CSV = 'reports/report.csv'
 
 def get_log_files(directory):
