@@ -44,4 +44,4 @@ print("Frequency report written to " .. report_file)
 
 
 
--- lua54 scripts/frequency.lua "backup_logs" "reports/frequency_report.csv"
+-- lua54 scripts/analyze/frequency.lua "backup_logs" "reports/frequency_report.csv"
