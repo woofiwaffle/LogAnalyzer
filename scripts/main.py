@@ -3,15 +3,15 @@ import csv
 import subprocess
 from datetime import datetime
 
-LOG_DIRECTORY = 'logs/'
-BACKUP_DIRECTORY = 'backup_logs/'
+LOG_DIRECTORY = 'logs'
+BACKUP_DIRECTORY = '../backup_logs/'
 OUTPUT_CSV = 'reports/report.csv'
 
 def get_log_files(directory):
     return sorted([f for f in os.listdir(directory) if f.startswith("application.log")])
 
 def process_log_file(log_file):
-    result = subprocess.run(['D:/Lua/lua54.exe', 'log_processor.lua', os.path.join(LOG_DIRECTORY, log_file)],
+    result = subprocess.run(['D:/Lua/lua54.exe', 'scripts/log_processor.lua', os.path.join(LOG_DIRECTORY, log_file)],
                             capture_output=True, text=True)
     counts = result.stdout.strip().split(',')
     
@@ -35,7 +35,7 @@ def write_csv_report(report_data):
             writer.writerow(entry)
 
 def backup_logs():
-    subprocess.run(['D:/Git/bin/bash.exe', 'backup.sh', LOG_DIRECTORY, BACKUP_DIRECTORY])
+    subprocess.run(['D:/Git/bin/bash.exe', 'scripts/backup.sh', LOG_DIRECTORY, BACKUP_DIRECTORY])
 
 if __name__ == '__main__':
     log_files = get_log_files(LOG_DIRECTORY)

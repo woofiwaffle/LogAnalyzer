@@ -1,0 +1,7 @@
+2024-10-05 12:00:00 INFO System check complete
+
+This line should be ignored
+2024-10-05 12:01:00 ERROR Disk read failure
+
+Some random text not related to logs
+2024-10-05 12:05:00 WARN High memory usage
